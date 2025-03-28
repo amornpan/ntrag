@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:/Users/Asus/pdf_corpus"
+      ]
+    },
+    "ragdocs": {
+      "command": "node",
+      "args": [
+        "C:/Users/Asus/AppData/Roaming/npm/node_modules/@aekanun/dev-ragdocs/dist/index.js"
+      ],
+      "env": {
+        "QDRANT_URL": "http://113.53.253.56:6333",
+        "EMBEDDING_PROVIDER": "ollama",
+        "OLLAMA_URL": "http://113.53.253.56:11434",
+        "OLLAMA_HOST": "http://113.53.253.56:11434"
+      }
+    }
+  }
+}
